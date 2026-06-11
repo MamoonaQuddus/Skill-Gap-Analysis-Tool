@@ -59,8 +59,3 @@ To transition this platform from an MVP to an enterprise-grade corporate recruit
 * **Licensing:** Distributed natively under the permissive **MIT License**. Feel free to adapt, modify, and build upon this core machine learning architecture.
 
 ---
-
-## ✉️ Contact & Support
-
-* **Developer Portfolio:** [Mamoona Quddus](https://github.com/MamoonaQuddus)
-* **Feedback Support:** If this platform helped automate or evaluate your talent pipeline workflows, consider leaving a ⭐ on the GitHub repository!
