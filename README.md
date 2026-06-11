@@ -4,24 +4,22 @@ An unsupervised NLP and Machine Learning web application designed to automatical
 
 ---
 
-## 🚀 System Features
+## ⚙️ Core Technical Architecture
 
 * **Dynamic Text Space Vectorization:** Leverages `TfidfVectorizer` to break down noisy, unstructured job descriptions into meaningful unigrams and bigrams while stripping out conversational stop-words.
 * **Unsupervised Domain Segmentation:** Employs `KMeans` clustering to categorize job requirements into target specialization tracks on-the-fly.
 * **Algorithmic Gap Extraction:** Computes structural skill deficiencies by calculating the relative mathematical set difference between candidate competency matrices and clustered market demands:
   $$\text{Discovered Gaps} = \text{Industry Clustered Requirements} \setminus \text{Candidate Active Tokens}$$
-* **Executive Profile Auditing UI:** A production-grade **Streamlit** dashboard built with state-preserving data flows, asynchronous multi-file ingestion validation, and searchable profile navigation that natively handles mixed alphanumeric/integer data keys.
-* **Targeted Upskilling Roadmaps:** Seamlessly cross-references identified missing skill sets against a structured learning dictionary to output micro-learning steps and project suggestions.
 
 ---
 
-## 🚀 Core Streamlit Features Developed
+## 🚀 Native Streamlit Implementations
 
-The interactive user interface leverages high-end, production-grade native Streamlit paradigms to ensure a seamless data science workflow:
+The interactive user interface leverages production-grade native Streamlit paradigms to ensure a seamless data science workflow:
 
-* **Asynchronous Multi-File Ingestion Deck:** Employs `st.file_uploader` to swallow completely distinct candidate (`intern_profiles.csv`) and industry requirement (`industry_jobs.csv`) schemas simultaneously, bound by strict dynamic pandas dataframe header validation.
+* **Asynchronous Multi-File Ingestion Deck:** Employs `st.file_uploader` to ingest completely distinct candidate (`intern_profiles.csv`) and industry requirement (`industry_jobs.csv`) schemas simultaneously, bound by strict dynamic pandas dataframe header validation.
 * **State-Preserving Pipeline Execution Window:** Utilizes `st.button` wrapped in a localized execution context (`st.spinner`) to process scikit-learn models and store training parameters safely within `st.session_state` across hot-reloads.
-* **Search-Optimized Custom Label Formatter:** Uses an advanced `st.selectbox` embedded with a custom `format_func` mapping callback. This beautifully masks raw database primary keys into an executive tracking visual layout (`Ali — Ref: I002`) while avoiding error-prone string parsing splits.
+* **Search-Optimized Custom Label Formatter:** Uses an advanced `st.selectbox` embedded with a custom `format_func` mapping callback. This beautifully masks raw database primary keys into an executive tracking visual layout (`Name — Ref: ID`) while avoiding error-prone string parsing splits.
 * **Multi-Tab Modular Analytics Layout:** Organizes complex information into distinct user views using `st.tabs` to isolate individual candidate drilldowns from aggregate class statistics.
 * **On-the-Fly Performance Report Exporter:** Embeds a native `st.download_button` that compiles the processed evaluation matrices from memory directly into a downloadable CSV asset (`cohort_skill_gaps_report.csv`).
 
@@ -53,41 +51,16 @@ To transition this platform from an MVP to an enterprise-grade corporate recruit
 * **Current Limitation:** Suggestions inside `training_catalog.py` are mapped via a static python dictionary, reverting to standard generic text if a newly discovered cluster keyword is not pre-indexed.
 * **Solution:** Integrate an open-source Large Language Model API (e.g., LLaMA 3 via Groq) to read the missing vector array and instantly construct a fully customized, day-by-day learning curriculum tailored explicitly to that intern's academic profile.
 
+---
+
+## 🛠️ Contribution & Licensing
+
+* **Contributions:** To submit changes, please fork the repository, commit updates on a separate feature branch, and initialize a clear Pull Request. For major workflow shifts, open an optimization issue first.
+* **Licensing:** Distributed natively under the permissive **MIT License**. Feel free to adapt, modify, and build upon this core machine learning architecture.
 
 ---
 
-## 🤝 Contributing
+## ✉️ Contact & Support
 
-Contributions are welcome!
-
-If you'd like to improve this project:
-- Fork the repository
-- Create a new branch
-- Make your changes
-- Submit a pull request
-
-You can also open issues for bugs or suggestions.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 📞 Contact
-
-For questions or suggestions, feel free to reach out:
-
-- GitHub: https://github.com/MamoonaQuddus
-
----
-
-## ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub!
-
----
-
-**Built with ❤️ by Mamoona Quddus**  
+* **Developer Portfolio:** [Mamoona Quddus](https://github.com/MamoonaQuddus)
+* **Feedback Support:** If this platform helped automate or evaluate your talent pipeline workflows, consider leaving a ⭐ on the GitHub repository!
